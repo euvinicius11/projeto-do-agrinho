@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendações de Produtos Agrícolas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Recomendações de Produtos Agrícolas</h1>
+    <div class="preferences-container">
+        <h2>Escolha suas Preferências</h2>
+        <form id="preferences-form">
+            <label for="category">Categoria:</label>
+            <select id="category" required>
+                <option value="">Selecione uma categoria</option>
+                <option value="fruta">Fruta</option>
+                <option value="legume">Legume</option>
+                <option value="cereal">Cereal</option>
+            </select>
+            <label for="price">Faixa de Preço:</label>
+            <input type="number" id="price-min" placeholder="Mínimo" required>
+            <input type="number" id="price-max" placeholder="Máximo" required>
+            <button type="submit">Buscar Recomendações</button>
+        </form>
+    </div>
+    <div id="recommendations">
+        <h2>Recomendações</h2>
+        <ul id="recommendations-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
